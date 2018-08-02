@@ -40,5 +40,5 @@ jobs:
       # run tests!
       - run: mvn test -Dtest=RiderrsRunner
       - store_test_results:
-          path: test-results
+          path: target/surefire-reports
 
