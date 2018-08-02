@@ -41,4 +41,8 @@ jobs:
       - run: mvn test -Dtest=RiderrsRunner
       - store_test_results:
           path: target/surefire-reports
+      - store_artifacts:
+          path: target/surefire-reports
+          destination: prefix
+
 
